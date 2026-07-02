@@ -1,0 +1,38 @@
+{
+  "name": "ahk-global-hotkeys",
+	"displayName": "Global Hotkeys",
+	"publisher": "markcrobbins",
+  "author": "markcrobbins",
+  "version": "0.0.1",
+  "description": "Global Windows hotkey manager and workspace automation layouts built on AutoHotkey v2",
+  "icon": "icon.jpg",
+  "license": "MIT",
+  "keywords": [
+    "ahk",
+    "global-hotkeys",
+    "workspace-automation",
+    "layouts",
+    "automation",
+    "hotkeys",
+    "windows",
+    "auto",
+    "hotkey",
+    "manager"
+  ],
+  "main": "global-hotkeys.ahk",
+  "scripts": {
+    "start": "cmd /c \"\"C:\\Program Files\\AutoHotkey\\UX\\AutoHotkeyUX.exe\" \"C:\\Program Files\\AutoHotkey\\UX\\launcher.ahk\" \"global-hotkeys.ahk\"\"",
+    "start:uia": "cmd /c \"\"C:\\Program Files\\AutoHotkey\\UX\\AutoHotkeyUX.exe\" \"C:\\Program Files\\AutoHotkey\\UX\\launcher.ahk\" /runwith UIA \"global-hotkeys.ahk\"\"",
+    "restart": "npm run start",
+    "compile": "\"C:\\Program Files\\AutoHotkey\\Compiler\\Ahk2Exe.exe\" /in \"global-hotkeys.ahk\" /out \"dist\\GlobalHotkeys.exe\"",
+    "compile:gui": "\"C:\\Program Files\\AutoHotkey\\Compiler\\Ahk2Exe.exe\" /gui /in \"global-hotkeys.ahk\""
+  },  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markcrobbins2112/ahk-global-hotkeys.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markcrobbins2112/ahk-global-hotkeys/issues"
+  },
+  "homepage": "https://github.com/markcrobbins2112/ahk-global-hotkeys#readme"
+}
