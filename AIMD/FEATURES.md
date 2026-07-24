@@ -1,19 +1,25 @@
-<!-- # TEMPLATE: FEATURES.template.md -->
-<!-- 
-# INSTRUCTIONS FOR THE HUMAN DEVELOPER:
-# Any text bounded by double curly braces {{like this}} is a placeholder for you to fill out.
-# Replace those placeholders with real paths, rules, and project constraints.
-#
-# INSTRUCTIONS FOR THE AI AGENT:
-# This file structures user-facing capabilities and functional features.
-# Group related software parts into "Feature Groups" (with tags and anchors),
-# then list them alphabetically under "All Features".
+<!-- TEMPLATE: FEATURES.template.md -->
+<!--
+INSTRUCTIONS FOR THE HUMAN DEVELOPER:
+Any text bounded by double curly braces {{like this}} is a placeholder for you to fill out.
+Replace those placeholders with real paths, rules, and project constraints.
+
+INSTRUCTIONS FOR THE AI AGENT:
+This file structures user-facing capabilities and functional features.
+Group related software parts into "Feature Groups" (with tags and anchors),
+then list them alphabetically under "All Features".
 -->
 
 <!-- markdownlint-disable MD013 -->
 # FEATURES
 
+Welcome to {{Specify Program Name}}! {{Provide a 2-3 sentence overview of what the tool accomplishes and how it improves operational workflows}}.
+
+---
+
 ## 📑 AI Primary Files
+<a id="a-aiprimaryfiles"></a>[TOC](#toc-aiprimaryfiles)
+
 - 🔹 [AGENTS.md](../AGENTS.md)
 - 🔹 [ARCHIVE.md](ARCHIVE.md)
 - 🔹 [BUILD.md](BUILD.md)
@@ -29,48 +35,58 @@
 - 🔹 [TESTING.md](TESTING.md)
 - 🔹 [VERSIONS.md](VERSIONS.md)
 
-## 🔍 Table of Contents
-- [[#📦 Feature Groups]] ^toc-groups
-- [[#🗄️ All Features]] ^toc-all-features
-- [[#📉 Deprecated / Removed Features]] ^toc-deprecated
-- [[#🚀 Go to...]] ^toc-goto
+---
 
-Welcome to {{Specify Program Name}}! {{Provide a 2-3 sentence overview of what the tool accomplishes and how it improves operational workflows}}.
+<!-- TOC location -->
+## 🔍 Table of Contents
+<!-- Maintained by script -->
+- [FEATURES](#a-features) <a id="toc-features"></a> ^toc-features
+  - [📑 AI Primary Files](#a-aiprimaryfiles) <a id="toc-aiprimaryfiles"></a> ^toc-aiprimaryfiles
+  - [📦 Feature Groups](#a-featuregroups) <a id="toc-featuregroups"></a> ^toc-featuregroups
+  - [🗄️ All Features](#a-allfeatures) <a id="toc-allfeatures"></a> ^toc-allfeatures
+  - [📉 Deprecated / Removed Features](#a-deprecatedremovedfeatures) <a id="toc-deprecatedremovedfeatures"></a> ^toc-deprecatedremovedfeatures
+  - [🚀 Go to...](#a-goto) <a id="toc-goto"></a> ^toc-goto
+
+<a id="a-features"></a>[TOC](#toc-features)
+
+---
 
 ## 📦 Feature Groups
-[[#^toc-groups|TOC]]
+<a id="a-featuregroups"></a>[TOC](#toc-featuregroups)
 
-### {{Icon}} 1. {{Group Title / e.g., Automated Layout Management}} ^z1
+<!-- template: feature group
+### {{Icon}} 1. {{Group Title / e.g., Automated Layout Management}}
+<a id="z1"></a><a id="a-aidz1aicon1grouptitleegautomatedlayoutmanagement"></a>[TOC](#toc-aidz1aicon1grouptitleegautomatedlayoutmanagement)
 {{Provide a clear paragraph outlining what this specific tier of functional features isolates, coordinates, and achieves}}
 - **[{{Feature Title}}](#[Feature-Title-Hyphenated-Link])** - {{Concise 1-sentence executive summary description of the capabilities}}
-
-### {{Icon}} 2. {{Group Title}} ^z2
-{{Group paragraph description}}
-- **[{{Feature Title}}](#[Feature-Title-Hyphenated-Link])** - {{Concise 1-sentence description}}
+-->
 
 ---
 
 ## 🗄️ All Features
-[[#^toc-all-features|TOC]]
+<a id="a-allfeatures"></a>[TOC](#toc-allfeatures)
 
-### {{Feature Title / e.g., Context Execution Targeting}}
-- **Group:** [[#^z1|{{Group Title}}]]
-{{Explain what this feature achieves across system frameworks, describing the user-facing outcomes, activation triggers, and parameters used.}}
-
+<!-- template: feature
 ### {{Feature Title}}
-- **Group:** [[#^z2|{{Group Title}}]]
+- **Group:** [{{Group Title}}](#z2)
 {{Technical feature operational overview walkthrough}}
+-->
 
 ---
 
 ## 📉 Deprecated / Removed Features
-[[#^toc-deprecated|TOC]]
+<a id="a-deprecatedremovedfeatures"></a>[TOC](#toc-deprecatedremovedfeatures)
+
+<!-- template: deprecated
+
 - **[!] {{Feature Name}}:** {{Describe why the feature asset was legacy tagged and stripped from production versions, noting previous errors or architectural adjustments.}}
   - **Replacement Pattern:** {{Explicitly reference the newly introduced loop, file structural change, or strategy that supersedes it.}}
+-->
 
 ---
 ## 🚀 Go to...
-[[#^toc-goto|TOC]]
+<a id="a-goto"></a>[TOC](#toc-goto)
+
 - 🔹 [AGENTS.md](../AGENTS.md)
 - 🔹 [ARCHIVE.md](ARCHIVE.md)
 - 🔹 [BUILD.md](BUILD.md)
@@ -86,4 +102,4 @@ Welcome to {{Specify Program Name}}! {{Provide a 2-3 sentence overview of what t
 - 🔹 [TESTING.md](TESTING.md)
 - 🔹 [VERSIONS.md](VERSIONS.md)
 
-<!-- # TEMPLATE: FEATURES.template.md -->
+<!-- TEMPLATE: FEATURES.template.md -->

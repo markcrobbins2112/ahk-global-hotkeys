@@ -1,16 +1,30 @@
 <!-- # TEMPLATE: README.template.md -->
 
+<!--
+README
+Any text bounded by double curly braces {{like this}} is a placeholder for you to fill out.
+Replace those placeholders with real paths, rules, and project constraints.
+
+INSTRUCTIONS FOR THE AI AGENT:
+This file tracks formal specifications, comparing originally requested guidelines
+against actual implemented items. Document architectural challenges, optimization rules,
+compatibility constraints, and platform limits.
+-->
+
 
 <!-- markdownlint-disable MD013 -->
 # Global Hot Keys
+<a id="a-globalhotkeys"></a>[TOC](#toc-globalhotkeys)
 
 Global Windows hotkey manager and workspace automation layouts built on AutoHotkey v2
 
 ![icon](icon.jpg)
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/markcrobbins)
 
+---
 
 ## 📑 AI Primary Files
+<a id="a-aiprimaryfiles"></a>[TOC](#toc-aiprimaryfiles)
 - 🔹 [AGENTS.md](AGENTS.md)
 - 🔹 [ARCHIVE.md](AIMD/ARCHIVE.md)
 - 🔹 [BUILD.md](AIMD/BUILD.md)
@@ -26,21 +40,34 @@ Global Windows hotkey manager and workspace automation layouts built on AutoHotk
 - 🔹 [TESTING.md](AIMD/TESTING.md)
 - 🔹 [VERSIONS.md](AIMD/VERSIONS.md)
 
+---
+<!-- TOC location -->
 ## 🔍 Table of Contents
-- [[#🎯 Project Abstract & Core Value]] ^toc-abstract
-- [[#🛠️ Technology Stack at a Glance]] ^toc-stack
-- [[#🗺️ Project Layout Blueprint]] ^toc-blueprint
-- [[#⚡ Quick Start for AI Developers]] ^toc-quickstart
-- [[#Go to...]] ^toc-goto
+<!-- Maintained by script -->
+- [Global Hot Keys](#a-globalhotkeys) <a id="toc-globalhotkeys"></a> ^toc-globalhotkeys
+  - [📑 AI Primary Files](#a-aiprimaryfiles) <a id="toc-aiprimaryfiles"></a> ^toc-aiprimaryfiles
+  - [🎯 Project Abstract & Core Value](#a-projectabstractcorevalue) <a id="toc-projectabstractcorevalue"></a> ^toc-projectabstractcorevalue
+  - [🛠️ Technology Stack at a Glance](#a-technologystackataglance) <a id="toc-technologystackataglance"></a> ^toc-technologystackataglance
+  - [🗺️ Project Layout Blueprint](#a-projectlayoutblueprint) <a id="toc-projectlayoutblueprint"></a> ^toc-projectlayoutblueprint
+  - [⚡ Quick Start for AI Developers](#a-quickstartforaidevelopers) <a id="toc-quickstartforaidevelopers"></a> ^toc-quickstartforaidevelopers
+  - [🚀 Go to...](#a-goto) <a id="toc-goto"></a> ^toc-goto
+
+---
+
 
 ## 🎯 Project Abstract & Core Value
-[[#^toc-abstract|TOC]]
-- {{A robust system tool designed to seamlessly accomplish domain objectives, manage system states, and optimize operational pipelines.}}
+<a id="a-projectabstractcorevalue"></a>[TOC](#toc-projectabstractcorevalue)
+<!--
+Describe
+-->
 
 ---
 
 ## 🛠️ Technology Stack at a Glance
-[[#^toc-stack|TOC]]
+<a id="a-technologystackataglance"></a>[TOC](#toc-technologystackataglance)
+<!--
+List of stack groups
+-->
 - **Target Operating System:** {{Specify Target OS / e.g., Windows 10, Cross-platform, Linux}}
 - **Core Languages & Runtimes:** {{Specify core languages / e.g., AutoIt3, Node.js runtime, Python}}
 - **Integrations:** {{Specify environment hooks / e.g., Native OS Shell, Local App Scheme Protocols}}
@@ -48,7 +75,8 @@ Global Windows hotkey manager and workspace automation layouts built on AutoHotk
 ---
 
 ## 🗺️ Project Layout Blueprint
-[[#^toc-blueprint|TOC]]
+<a id="a-projectlayoutblueprint"></a>[TOC](#toc-projectlayoutblueprint)
+
 - **`AGENTS.md`** ➔ System prompts and operational boundaries for AI teammates.
 - **`AIMD/ARCHIVE.md`** ➔ Scriptorium for scrapped ideas and sunset components.
 - **`AIMD/BUILD.md`** ➔ Compiler pipelines, flags, and packaging steps.
@@ -67,21 +95,31 @@ Global Windows hotkey manager and workspace automation layouts built on AutoHotk
 ---
 
 ## ⚡ Quick Start for AI Developers
-[[#^toc-quickstart|TOC]]
+<a id="a-quickstartforaidevelopers"></a>[TOC](#toc-quickstartforaidevelopers)
+<!--
+Steps list
+- Setup
+- Build
+- Test
+- Publish
+-->
+<!-- template: step
+### 1. {{title}}
+<details>
+<summary>🖥️ Commands</summary>
 
-### 1. Verify Environment
 ```cmd
 {{Command to test environment variables or prerequisites / e.g., echo %ENV_ROOT%}}
 ```
 
-### 2. Compile & Run Tests
-```cmd
-{{High-level system execution command chain / e.g., run_build.bat && run_test.bat}}
-```
+</details>
+-->
 
 ---
+
 ## 🚀 Go to...
-[[#^toc-goto|TOC]]
+<a id="a-goto"></a>[TOC](#toc-goto)
+
 - 🔹 [AGENTS.md](AGENTS.md)
 - 🔹 [ARCHIVE.md](AIMD/ARCHIVE.md)
 - 🔹 [BUILD.md](AIMD/BUILD.md)

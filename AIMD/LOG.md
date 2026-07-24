@@ -1,20 +1,34 @@
-<!-- # TEMPLATE: LOG.template.md -->
-<!-- 
-# INSTRUCTIONS FOR THE HUMAN DEVELOPER:
-# Any text bounded by double curly braces {{like this}} is a placeholder for you to fill out.
-# Replace those placeholders with real paths, rules, and project constraints.
-#
-# INSTRUCTIONS FOR THE AI AGENT:
-# This file tracks chronological development progress. On every single session or 
-# significant functional edit, register a new entry detailing goals, executed changes, 
-# affected files, and upcoming pipelines.
-# Keep the very latest entry at the top of the "Log Entries" section.
+<!-- TEMPLATE: LOG.template.md -->
+<!--
+INSTRUCTIONS FOR THE HUMAN DEVELOPER:
+Any text bounded by double curly braces {{like this}} is a placeholder for you to fill out.
+Replace those placeholders with real paths, rules, and project constraints.
+
+INSTRUCTIONS FOR THE AI AGENT:
+This file tracks chronological development progress. On every single session or
+significant functional edit, register a new entry detailing goals, executed changes,
+affected files, and upcoming pipelines.
+Keep the very latest entry at the top of the "Log Entries" section.
 -->
 
 <!-- markdownlint-disable MD013 -->
 # LOG
 
+<!-- TOC location -->
+## 🔍 Table of Contents
+<!-- Maintained by script -->
+- [LOG](#a-log) <a id="toc-log"></a> ^toc-log
+  - [📑 AI Primary Files](#a-aiprimaryfiles) <a id="toc-aiprimaryfiles"></a> ^toc-aiprimaryfiles
+  - [💾 Commit Message](#a-commitmessage) <a id="toc-commitmessage"></a> ^toc-commitmessage
+  - [📝 Log Entries](#a-logentries) <a id="toc-logentries"></a> ^toc-logentries
+  - [🏛️ Permanent Decision Record Archive](#a-permanentdecisionrecordarchive) <a id="toc-permanentdecisionrecordarchive"></a> ^toc-permanentdecisionrecordarchive
+  - [🚀 Go to...](#a-goto) <a id="toc-goto"></a> ^toc-goto
+
+<a id="a-log"></a>[TOC](#toc-log)
+
 ## 📑 AI Primary Files
+<a id="a-aiprimaryfiles"></a>[TOC](#toc-aiprimaryfiles)
+
 - 🔹 [AGENTS.md](../AGENTS.md)
 - 🔹 [ARCHIVE.md](ARCHIVE.md)
 - 🔹 [BUILD.md](BUILD.md)
@@ -30,75 +44,82 @@
 - 🔹 [TESTING.md](TESTING.md)
 - 🔹 [VERSIONS.md](VERSIONS.md)
 
-## 🔍 Table of Contents
-- [[#💾 Commit Message]] ^toc-commit
-- [[#📝 Log Entries]] ^toc-entries
-- [[#🏛️ Permanent Decision Record Archive]] ^toc-adr
-- [[#🚀 Go to...]] ^toc-goto
+---
+
+---
 
 <!--
   INSTRUCTION FOR THE AI:
   Always maintain a clean, copyable commit message here summarizing the work from the active turn.
-  This section must be emptied or updated as the user requests. Let the commit message strictly 
+  This section must be emptied or updated as the user requests. Let the commit message strictly
   follow Conventional Commits styling (e.g., feat:, fix:, chore:, docs:, refactor:).
 -->
 ## 💾 Commit Message
-[[#^toc-commit|TOC]]
-```text
-{{Conventional Commits prefix}}: {{high-level summary of action}}
+<a id="a-commitmessage"></a>[TOC](#toc-commitmessage)
+<!--
+Always maintain a clean, copyable commit message here summarizing the work from the active turn.
+This section must be emptied or updated as the user requests. Let the commit message strictly
+follow Conventional Commits styling (e.g., feat:, fix:, chore:, docs:, refactor:).
+-->
 
+```text
+{{feat,chore,fix}} {{version}} {{ai maintains this message}}
+{{Conventional Commits prefix}}: {{high-level summary of action}}
 - {{Key bullet point of changes}}
 - {{Another key bullet point}}
 - {{Details about files adjusted}}
 ```
 
 ## 📝 Log Entries
-[[#^toc-entries|TOC]]
+<a id="a-logentries"></a>[TOC](#toc-logentries)
 
-<!-- 
+<!--
   INSTRUCTION FOR NEW ENTRIES:
-  Insert new entries directly AT THE TOP of this list, just below this comment.
-  Use the template structure below:
-  
+  Insert new entries directly AT THE TOP of this list, just after this comment.
+  List of Log Entries
+-->
+
+<!-- template: log item
+
   ### 📅 [YYYY-MM-DDTHH:MM:SSZ] (Use the current UTC timestamp)
-  #### 🎯 Primary Goals & Requirements
+  #### 🎯 Primary Goals & Requirements [YYYY-MM-DDTHH:MM:SSZ]
   - {{Describe what the user asked for or what the backlog item required}}
   - {{Add any constraints detected or defined}}
 
-  #### 🛠️ Completed Changes in this Session
+  #### 🛠️ Completed Changes in this Session [YYYY-MM-DDTHH:MM:SSZ]
   - {{Action Item 1}}: {{Detailed summary of file edits, additions, or configurations}}
   - {{Action Item 2}}: {{Explain why changes were made and how they interact}}
-  
-  #### 🔸 Affected Files
-  - `{{/path/to/modified_file_1.ext}}`
-  - `{{/path/to/modified_file_2.ext}}`
+
+  #### 🔸 Affected Files [YYYY-MM-DDTHH:MM:SSZ]
+  - [/path/to/modified_file_1.ext](/path/to/modified_file_1.ext)
+  - [/path/to/modified_file_2.ext](/path/to/modified_file_2.ext)
+
+  #### 🍀 Next Steps, Suggestions, Concerns [YYYY-MM-DDTHH:MM:SSZ]
+  - {{Action Item 1}}: {{Detailed summary}}
 -->
-
-### 📅 [2026-06-23T21:06:00Z]
-#### 🎯 Primary Goals & Requirements
-- Baseline initialization of the standard development environment layout framework.
-
-#### 🛠️ Completed Changes in this Session
-- Implemented core feature structures and verified multi-environment cross-linking pathways.
-
-#### 🔸 Affected Files
-- `/README.md`
 
 ---
 
 ## 🏛️ Permanent Decision Record Archive
-[[#^toc-adr|TOC]]
+<a id="a-permanentdecisionrecordarchive"></a>[TOC](#toc-permanentdecisionrecordarchive)
 
+<!-- A snapshot record of major architectural choices that must not be broken or forgotten in future chats.
+List of Architectural Decision Records
+-->
+
+<!-- template: Architectural Decision Record
 ### 🏷️ [ADR-001] - {{Architectural Decision Title / e.g., Choosing UTF-16 LE for System Configs}}
-<!-- AI Purpose: A snapshot record of major architectural choices that must not be broken or forgotten in future chats. -->
 - **Date Approved:** {{YYYY-MM-DD}}
 - **Context:** {{Why was this choice necessary? What constraints existed?}}
 - **Decision:** {{What exact path, pattern, library, or rule did you settle on?}}
 - **Consequences:** {{What are the trade-offs? What downstream constraints does this apply to your future code generation?}}
 
+-->
+
 ---
 ## 🚀 Go to...
-[[#^toc-goto|TOC]]
+<a id="a-goto"></a>[TOC](#toc-goto)
+
 - 🔹 [AGENTS.md](../AGENTS.md)
 - 🔹 [ARCHIVE.md](ARCHIVE.md)
 - 🔹 [BUILD.md](BUILD.md)
@@ -114,4 +135,4 @@
 - 🔹 [TESTING.md](TESTING.md)
 - 🔹 [VERSIONS.md](VERSIONS.md)
 
-<!-- # TEMPLATE: LOG.template.md -->
+<!-- TEMPLATE: LOG.template.md -->
